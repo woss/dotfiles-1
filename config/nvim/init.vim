@@ -45,8 +45,8 @@
   " call dein#add('tpope/vim-vinegar')
   call dein#add('Shougo/denite.nvim')
 
-  " call dein#add('mhartington/oceanic-next')
-  call dein#local('~/GitHub', {},['oceanic-next'])
+  call dein#add('mhartington/oceanic-next')
+  " call dein#local('~/GitHub', {},['oceanic-next'])
   call dein#add('reedes/vim-colors-pencil')
   call dein#add('frankier/neovim-colors-solarized-truecolor-only')
   call dein#add('mhartington/vim-folds')
@@ -63,8 +63,8 @@
   " call dein#add('https://github.com/jaxbot/github-issues.vim')
 
   call dein#add('tpope/vim-repeat')
-  " call dein#add('neomake/neomake')
-  call dein#local('~/GitHub', {},['neomake'])
+  call dein#add('neomake/neomake')
+  " call dein#local('~/GitHub', {},['neomake'])
   call dein#add('editorconfig/editorconfig-vim')
   call dein#add('scrooloose/nerdtree')
   call dein#add('AndrewRadev/switch.vim')
@@ -88,8 +88,8 @@
 
   " call dein#local('~/GitHub', {},['deoplete-html', 'deoplete-npm'])
 
-  call dein#local('~/GitHub', {},['deoplete-typescript'])
-  " call dein#add('mhartington/deoplete-typescript')
+  " call dein#local('~/GitHub', {},['deoplete-typescript'])
+  call dein#add('mhartington/deoplete-typescript')
   " call dein#add('DonnieWest/deoplete-typescript')
 
   call dein#add('Shougo/neco-vim', {'on_ft': 'vim'})
@@ -109,8 +109,8 @@
   call dein#add('Shougo/neosnippet-snippets')
   call dein#add('honza/vim-snippets')
   call dein#add('matthewsimo/angular-vim-snippets')
-  call dein#local('~/GitHub', {},['vim-angular2-snippets'])
-  call dein#local('~/GitHub', {},['vim-typings'])
+  " call dein#local('~/GitHub', {},['vim-angular2-snippets'])
+  " call dein#local('~/GitHub', {},['vim-typings'])
   call dein#add('heavenshell/vim-jsdoc')
 
   call dein#add('mhinz/vim-sayonara')
@@ -411,7 +411,7 @@
   smap <C-k>     <Plug>(neosnippet_expand_or_jump)
   xmap <C-k>     <Plug>(neosnippet_expand_target)
 " Tell Neosnippet about the other snippets
-let g:neosnippet#snippets_directory='~/.config/repos/github.com/Shougo/neosnippet-snippets/neosnippets, ~/Github/ionic-snippets, ~/.config/repos/github.com/matthewsimo/angular-vim-snippets/snippets'
+" let g:neosnippet#snippets_directory='~/.config/repos/github.com/Shougo/neosnippet-snippets/neosnippets, ~/Github/ionic-snippets, ~/.config/repos/github.com/matthewsimo/angular-vim-snippets/snippets'
 
 " SuperTab like snippets behavior.
   imap <expr><TAB> neosnippet#expandable_or_jumpable() ?
